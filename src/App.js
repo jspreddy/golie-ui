@@ -1,24 +1,43 @@
 import React, { Component } from 'react';
-import logo from './resources/logo.svg';
 import './resources/App.css';
-import Grid from 'material-ui/Grid';
-import Avatar from 'material-ui/Avatar';
-import Paper from 'material-ui/Paper';
+import GoalList from './GoalList.js';
 
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-    margin: 0,
-    padding: 10,
+
+const styles = {
+  goalContainer: {padding: '8px', overflowX:'hidden'}
+};
+
+const goals= [
+  {
+    avatar: "AR",
+    title: "Horizontal Lat Row",
   },
-  paper: {
-    height: 140,
-    width: 100,
+  {
+    avatar: "AB",
+    title: "Back Extension",
   },
-  control: {
-    padding: theme.spacing.unit * 2,
+  {
+    avatar: "BA",
+    title: "Front Row",
   },
-});
+  {
+    avatar: "CH",
+    title: "Chest Forward",
+  },
+  {
+    avatar: "CH",
+    title: "MTS Incline Press",
+  },
+  {
+    avatar: "CH",
+    title: "Butterfly",
+  },
+  {
+    avatar: "LE",
+    title: "Leg Curl",
+  },
+
+];
 
 class App extends Component {
   render() {
@@ -27,14 +46,8 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">#Golie</h1>
         </header>
-        <div className={styles.root}>
-          <Grid container spacing={24}>
-            <Grid item xs={12}>
-              <Paper className={styles.paper}>
-                <Avatar>SJ</Avatar>
-              </Paper>
-            </Grid>
-          </Grid>
+        <div style={styles.goalContainer}>
+          <GoalList goals={goals} />
         </div>
       </div>
     );
