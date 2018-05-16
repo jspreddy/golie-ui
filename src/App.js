@@ -11,30 +11,37 @@ const goals= [
   {
     avatar: "AR",
     title: "Horizontal Lat Row",
+    count: 3,
   },
   {
     avatar: "AB",
     title: "Back Extension",
+    count: 34,
   },
   {
     avatar: "BA",
     title: "Front Row",
+    count: 67,
   },
   {
     avatar: "CH",
     title: "Chest Forward",
+    count: 58,
   },
   {
     avatar: "CH",
     title: "MTS Incline Press",
+    count: 24,
   },
   {
     avatar: "CH",
     title: "Butterfly",
+    count: 985,
   },
   {
     avatar: "LE",
     title: "Leg Curl",
+    count: 45,
   },
 
 ];
