@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './resources/App.css';
 import GoalList from './GoalList.js';
 
@@ -46,7 +46,7 @@ const goals= [
 
 ];
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">

@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Goal from './Goal.js';
 
-class GoalList extends Component {
+class GoalList extends React.Component {
   constructor(props){
     super(props);
   }
