@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import IconButton from '@material-ui/core/IconButton';
@@ -48,7 +48,7 @@ const styles = {
   },
 };
 
-class Goal extends Component{
+class Goal extends React.Component{
   constructor(props){
     super(props);
   }
